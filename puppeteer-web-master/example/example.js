@@ -12,7 +12,7 @@ module.exports = async () => {
   const page = await browser.newPage();
   const page2 = await browser.newPage();
 
-  await page.goto(`https://www.tiktok.com/`, {
+  await page.goto(`https://www.google.com/`, {
     waitUntil: "networkidle2",
   });
   const pagesCount = (await browser.pages()).length;
